@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trilight Neopolis | Ultra-Luxury Sky Residences | Rise with 9</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience unparalleled luxury at The Trilight Neopolis - Hyderabad's most prestigious address. Ultra-luxury 3 & 4 BHK sky residences with 23-ft double-height living, Gandipet Lake views, 6-storey clubhouse. Located in Kokapet's exclusive Neopolis.">
+    <meta name="keywords" content="luxury apartments Hyderabad, Trilight Neopolis, Kokapet luxury residences, 3 BHK 4 BHK Hyderabad, premium apartments Gachibowli, sky villas Hyderabad, Neopolis Kokapet, luxury real estate Hyderabad, high-rise apartments Hyderabad, Gandipet Lake view apartments">
+    <meta name="author" content="The Trilight Neopolis">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Trilight Neopolis | Ultra-Luxury Sky Residences">
+    <meta property="og:description" content="Hyderabad's most prestigious address. Ultra-luxury 3 & 4 BHK residences with 23-ft double-height living and Gandipet Lake views.">
+    <meta property="og:url" content="https://thetrilightneopolis.com">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "The Trilight Neopolis",
+      "description": "Ultra-luxury residential project in Neopolis, Kokapet, Hyderabad",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kokapet",
+        "addressRegion": "Hyderabad",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-8978089939",
+      "priceRange": "Premium"
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #B8941F;
+            --navy: #0A1628;
+            --charcoal: #1A1A1A;
+            --cream: #F5F5F0;
+            --white: #FFFFFF;
+            --light-gray: #E8E8E8;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: var(--white);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(10, 22, 40, 0.95) 0%, rgba(26, 26, 26, 0.85) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%230A1628" width="1920" height="1080"/><path fill="%23D4AF37" opacity="0.1" d="M0,400 Q480,300 960,400 T1920,400 L1920,1080 L0,1080 Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(10, 22, 40, 0.4) 100%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            padding: 0 20px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 30px;
+            color: var(--white);
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+        }
+        
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            color: var(--cream);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 18px 45px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            border: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--gold);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 50px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav.scrolled {
+            padding: 15px 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+        
+        /* Sections */
+        section {
+            padding: 120px 50px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            padding: 50px 40px;
+            border-radius: 5px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border-top: 4px solid var(--gold);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--navy);
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* Highlights Section */
+        .highlights {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--charcoal) 100%);
+            color: var(--white);
+        }
+        
+        .highlights .section-title {
+            color: var(--white);
+        }
+        
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .highlight-item {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .highlight-item:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold);
+        }
+        
+        .highlight-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .highlight-text {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: var(--cream);
+        }
+        
+        /* Amenities Section */
+        .amenities {
+            background: var(--cream);
+        }
+        
+        .amenities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .amenity-item {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .amenity-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        
+        .amenity-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            min-width: 60px;
+        }
+        
+        .amenity-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+        
+        /* Location Section */
+        .location {
+            background: var(--white);
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 60px;
+        }
+        
+        .location-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: var(--navy);
+        }
+        
+        .location-points {
+            list-style: none;
+        }
+        
+        .location-points li {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--light-gray);
+            font-size: 1.1rem;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .location-points li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .location-map {
+            background: var(--cream);
+            height: 500px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #999;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        /* Contact Form */
+        .contact-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--charcoal) 100%);
+            color: var(--white);
+        }
+        
+        .contact-section .section-title {
+            color: var(--white);
+        }
+        
+        .contact-form {
+            max-width: 700px;
+            margin: 60px auto 0;
+            background: rgba(255,255,255,0.05);
+            padding: 60px;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            background: rgba(255,255,255,0.05);
+            color: var(--white);
+            border-radius: 3px;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255,255,255,0.08);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            border-radius: 3px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .submit-btn:hover {
+            background: var(--dark-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 60px 50px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--cream);
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .contact-icon {
+            color: var(--gold);
+            font-size: 1.3rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: #999;
+        }
+        
+        .disclaimer {
+            font-size: 0.65rem;
+            color: #666;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            section {
+                padding: 80px 20px;
+            }
+            
+            .contact-form {
+                padding: 40px 30px;
+            }
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">THE TRILIGHT</a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">Neopolis, Kokapet</div>
+            <h1>RISE WITH 9</h1>
+            <p class="hero-tagline">Hyderabad's Most Prestigious Sky Residences</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Schedule Private Viewing</a>
+                <a href="#features" class="btn btn-secondary">Explore Residences</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="section-subtitle">Architectural Excellence</div>
+            <h2 class="section-title">Redefining Luxury Living</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>23-Ft Double Height Living</h3>
+                    <p>Experience villa-like grandeur in the sky. First-of-its-kind double-height living spaces offering unmatched scale, natural light, and architectural sophistication.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Gandipet Lake Views</h3>
+                    <p>Wake up to serene lake vistas and glittering city skylines. A rare dual perspective that combines nature's tranquility with urban energy.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏢</div>
+                    <h3>56-Floor Sky Towers</h3>
+                    <p>Two iconic towers defining Hyderabad's skyline. Premium high-rise living with panoramic views and world-class elevation design.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏡</div>
+                    <h3>Ultra-Spacious Residences</h3>
+                    <p>Expansive 3 & 4 BHK apartments ranging from 3,303 to 5,777 sq ft. Designed for those who appreciate space, privacy, and grandeur.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>100% Vaastu Compliant</h3>
+                    <p>Meticulously planned layouts ensuring positive energy flow, optimal sunlight, and harmonious living spaces for your family's well-being.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📍</div>
+                    <h3>Prime Neopolis Address</h3>
+                    <p>Located in Kokapet's most coveted micro-market. Seamless connectivity to Financial District, Gachibowli, HITEC City, and Airport.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <div class="section-subtitle">By The Numbers</div>
+            <h2 class="section-title">Unmatched Scale & Prestige</h2>
+            
+            <div class="highlights-grid">
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">3.6</div>
+                    <div class="highlight-text">Acres of Prime Land</div>
+                </div>
+                
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">56</div>
+                    <div class="highlight-text">Floors of Luxury</div>
+                </div>
+                
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">2</div>
+                    <div class="highlight-text">Iconic Towers</div>
+                </div>
+                
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">5,777</div>
+                    <div class="highlight-text">Sq Ft Max Size</div>
+                </div>
+                
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">2</div>
+                    <div class="highlight-text">World-Class Clubhouses</div>
+                </div>
+                
+                <div class="highlight-item fade-in">
+                    <div class="highlight-number">2029</div>
+                    <div class="highlight-text">Possession Year</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-subtitle">Lifestyle Privileges</div>
+            <h2 class="section-title">The 9th House & The 18th Hour</h2>
+            
+            <div class="amenities-list">
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🏊</div>
+                    <div class="amenity-name">Rooftop Infinity Pool</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">💪</div>
+                    <div class="amenity-name">State-of-the-Art Gym & Cardio Studio</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🎬</div>
+                    <div class="amenity-name">Double-Height Private Theatre</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🏸</div>
+                    <div class="amenity-name">Badminton & Squash Courts</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🎾</div>
+                    <div class="amenity-name">Pickleball Courts</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🍸</div>
+                    <div class="amenity-name">Sky Bar with Panoramic Deck</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🎭</div>
+                    <div class="amenity-name">Amphitheatre & Party Deck</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🎙️</div>
+                    <div class="amenity-name">Podcast Room & Insta Studio</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🐕</div>
+                    <div class="amenity-name">Luxury Pet Spa</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">🎪</div>
+                    <div class="amenity-name">Banquet Hall & Private Dining</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">☕</div>
+                    <div class="amenity-name">Gourmet Bar & Café</div>
+                </div>
+                
+                <div class="amenity-item fade-in">
+                    <div class="amenity-icon">👶</div>
+                    <div class="amenity-name">Kids' Play Area & Creche</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-subtitle">Strategic Location</div>
+            <h2 class="section-title">At The Heart of Hyderabad's Growth</h2>
+            
+            <div class="location-grid">
+                <div class="location-content fade-in">
+                    <h3>Neopolis, Kokapet</h3>
+                    <ul class="location-points">
+                        <li>2 minutes to Outer Ring Road (ORR)</li>
+                        <li>10 minutes to Financial District & Gachibowli</li>
+                        <li>15 minutes to HITEC City</li>
+                        <li>20 minutes to Rajiv Gandhi International Airport</li>
+                        <li>Adjacent to International Schools & Universities</li>
+                        <li>Close to Multi-Specialty Hospitals</li>
+                        <li>Premium Shopping & Dining Destinations</li>
+                        <li>Surrounded by Corporate Hubs & IT Parks</li>
+                    </ul>
+                </div>
+                
+                <div class="location-map fade-in">
+                    <p>📍 Neopolis, Kokapet - Hyderabad's Most Prestigious Address</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-subtitle">Get In Touch</div>
+            <h2 class="section-title">Schedule Your Private Viewing</h2>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Request Exclusive Presentation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Trilight Neopolis</h3>
+                <p>Hyderabad's most prestigious sky residences. Experience unparalleled luxury in the heart of Neopolis, Kokapet.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#features">Features</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+91 8978089939</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Neopolis, Kokapet, Hyderabad</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🏛️</span>
+                        <span>RERA: P02400009942</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Trilight Neopolis. All Rights Reserved.</p>
+            <p class="disclaimer">* This is a marketing website intended for Channel Partners</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your backend
+            console.log('Form submitted:', data);
+            
+            alert('Thank you for your interest! Our team will contact you shortly to schedule your private viewing.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
